@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razorpay clone by Veer Pal Singh</title>
     <link rel="icon" href="images/favicon.svg">
     <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       .move{
         animation: 5s infinite linear moveCompany;
@@ -25,67 +28,66 @@
 </head>
 <body>
   <!-- navbar -->
- <nav class="bg-back  ">
-   <div class="  h-[80px] w-[1211px] items-center mx-auto flex justify-evenly">
-    <a href="/" class="hover:cursor-pointer py-7 pr-7"><img src="razor.svg" alt="" width="125px" height="30px"></a>
+<!-- navbar -->
+<nav style="background-color: #04032D;">
+  <div class="h-[80px] max-w-[1211px] w-full items-center mx-auto flex justify-between px-4">
+    <a href="/" class="hover:cursor-pointer py-7 pr-7">
+      <img src="razor.svg" alt="Razor Logo" width="125" height="30">
+    </a>
     
-    <ul class="flex space-x-6 " >
-        <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-        transition-all duration-200 relative group">
+    <ul class="flex space-x-6">
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
         <a href="#">Payments</a>
         <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
-       </li>
-
-       <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-       transition-all duration-200 relative group">
-       <a href="#">Banking+</a>
-       <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
       </li>
 
-      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-       transition-all duration-200 relative group">
-       <a href="#">Line of Credit</a>
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Banking+</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
+      </li>
+
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Line of Credit</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
       </li>
        
-      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-      transition-all duration-200 relative group">
-      <a href="#">Payroll</a>
-     </li>
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Payroll</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
+      </li>
 
-     <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-     transition-all duration-200 relative group">
-     <a href="#">Resources</a>
-     <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
-    </li>
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Resources</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
+      </li>
 
-    <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-    transition-all duration-200 relative group">
-    <a href="#">Support</a>
-    <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
-   </li>
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Support</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
+      </li>
 
-   <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer 
-   transition-all duration-200 relative group">
-   <a href="#">Pricing</a>
-   <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
-  </li>
-
+      <li class="text-white font-mono py-7 hover:text-blue-400 cursor-pointer transition-all duration-200 relative group">
+        <a href="#">Pricing</a>
+        <div class="absolute bottom-0 w-full h-1 bg-blue-300 hidden group-hover:block transition-all duration-200"></div>
+      </li>
     </ul>
 
-    <div class="flex gap-4 -mr-2">   
-    <img src="flag.png" alt="" class="h-[20px] w-[28px] mt-2 ">
+    <div class="flex gap-4 items-center">   
+      <img src="flag.png" alt="Country Flag" class="h-[20px] w-[28px]">
 
-    <button class="bg-back text-white py-1 px-5 border-blue-400 border  rounded-sm text-sm font-bold ">Log in</button>
+      <button class="bg-back text-white py-1 px-5 border-blue-400 border rounded-sm text-sm font-bold hover:bg-blue-400/10 transition-all duration-200">
+        Log in
+      </button>
 
-    <button class="bg-white text-blue-400 font-bold border-blue-400 border  rounded-sm px-4 py-2 hover:text-blue-700 transition-all duration-200">Sign up →</button>
-
+      <button class="bg-white text-blue-400 font-bold border-blue-400 border rounded-sm px-4 py-2 hover:text-blue-700 hover:bg-blue-50 transition-all duration-200">
+        Sign up →
+      </button>
     </div>
-
-   </div>
- </nav>
+  </div>
+</nav>
 
  <!-- Hero-1 -->
-  <section class="bg-back relative py-12  ">
+  <section class=" relative py-12  " style="background-color: #04032D;">
     <div class="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto" >
       <!-- left part -->
        <div class="space-y-8 ">
